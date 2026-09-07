@@ -104,3 +104,25 @@ html, body {
 .animate-soft-pulse {
   animation: soft-pulse 2.2s infinite ease-in-out;
 }
+
+/* Liquid Glass Navigation Aesthetics */
+.liquid-glass-bar {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.78) 0%, rgba(248, 246, 240, 0.70) 100%);
+  backdrop-filter: blur(30px) saturate(210%);
+  -webkit-backdrop-filter: blur(30px) saturate(210%);
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  box-shadow: 
+    0 20px 45px -12px rgba(11, 19, 43, 0.13),
+    0 6px 18px -4px rgba(11, 19, 43, 0.06),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1px rgba(11, 19, 43, 0.04);
+}
+
+.liquid-glass-active {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96) 0%, rgba(240, 249, 244, 0.90) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.98);
+  box-shadow: 
+    0 4px 14px -2px rgba(16, 185, 129, 0.12),
+    0 2px 6px -1px rgba(11, 19, 43, 0.05),
+    inset 0 1px 1.5px rgba(255, 255, 255, 1);
+}

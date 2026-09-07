@@ -75,7 +75,10 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({ children }) => {
         </div>
 
         {/* Inner App Content */}
-        <div className="flex-1 overflow-y-auto no-scrollbar relative flex flex-col">
+        <div
+          id="app-scroll-container"
+          className="flex-1 overflow-y-auto no-scrollbar relative flex flex-col"
+        >
           {children}
         </div>
 
